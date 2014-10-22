@@ -1,4 +1,4 @@
-package pl.altkom.magazyn;
+package pl.altkom.library;
 
 import java.text.DateFormat;
 import java.util.Date;
@@ -34,6 +34,19 @@ public class HomeController {
 		model.addAttribute("serverTime", formattedDate );
 		
 		return "home";
+	}
+        @RequestMapping(value = "/kontakt", method = RequestMethod.GET)
+	public String kontakt(Locale locale, Model model) {
+		logger.info("Welcome home! The client locale is {}.", locale);
+		
+		Date date = new Date();
+		DateFormat dateFormat = DateFormat.getDateTimeInstance(DateFormat.LONG, DateFormat.LONG, locale);
+		
+		String formattedDate = dateFormat.format(date);
+		
+		model.addAttribute("serverTime", formattedDate );
+		
+		return "kontakt";
 	}
 	
 }

@@ -1,0 +1,32 @@
+           table, th, td {
+                border: 1px solid black;
+                border-collapse: collapse;
+            }
+            table {
+                background-color: #E5B27E ; margin:20px; padding:20px; 
+                width: 98%;
+            }
+            th, td {
+                padding: 15px;
+            }
+            #td2 {
+              background-color: #B89470;
+            }
+            #tableA1{
+                border: none;
+                padding: 5px;
+                width: 250px;
+            }
+            #Id1{
+               width: 25px;
+               background-color: #B89470;
+            }
+             #UZ{
+               width: 25px;
+               background-color: #B89470;
+               color: #B89470;
+            }
+             #table1{
+                border: none;
+                padding: 5px;
+            }

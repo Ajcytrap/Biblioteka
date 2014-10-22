@@ -1,2 +1,2 @@
-magazyn
+library
 =======
